@@ -1,0 +1,50 @@
+#pitch {
+  background: url("../img/home/pitch_background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 40em;
+}
+/* line 73, ../scss/app.scss */
+#pitch .intro {
+  padding: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 78, ../scss/app.scss */
+#pitch h1 {
+  color: #fff;
+  text-align: center;
+}
+/* line 81, ../scss/app.scss */
+#pitch p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* line 86, ../scss/app.scss */
+#pitch .tech-img {
+  background: url("../img/home/pitch_logo.jpg") no-repeat center center;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 95, ../scss/app.scss */
+  #pitch .tech-img {
+    height: 18rem;
+    width: 18rem;
+  }
+  /* line 98, ../scss/app.scss */
+  #pitch h1 {
+    padding-top: 4.5rem;
+    text-align: left;
+  }
+  /* line 101, ../scss/app.scss */
+  #pitch p {
+    text-align: left;
+  }
+}
+
