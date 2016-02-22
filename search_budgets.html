@@ -2,87 +2,130 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uwazi | Search Budgets</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css_sidebar/foundation.css" />
+    <link rel="stylesheet" href="css_sidebar/foundation-icons.css" />
+    <link href="css_sidebar/simple-sidebar.css" rel="stylesheet">
+    <link href="css_sidebar/fixed-top-bar.css" rel="stylesheet">
+    <script src="js_sidebar/vendor/modernizr.js"></script>
   </head>
   <body>
+      <nav class="tab-bar">
+      <section class="left-small">
+        <a class="menu-icon" id="menu-toggle"><span></span></a>
+      </section>
 
-    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
-    
-    <div class="top-bar" id="example-menu">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text"><a href="Uwazi.html">Uwazi</a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="login.html">Login</a></li>
-          <li><a href="signup_citizen.html">Signup</a></li>
-        </ul>
-      </div>
-    </div>
+      <section class="middle tab-bar-section">
+        <h1 class="title">UWAZI</h1>
+      </section>
 
-    <!-- START SEARCH FOR BUDGETS -->
-    <div class="row">
-      <div class="large-12 columns">
-        <div align="center" id="search_budgets">
-          <h2>Search for budgets</h2>
-          <form action="" method="post">
-            <div class="row">
-              <div class="medium-4 medium-centered columns">
-                <div class="row">
-                  <div class="large-4 large-uncentered columns">
-                    <br>
-                    <p> Mwaka </p>
-                  </div>
-                  <div class="large-6 large-uncentered columns">
-                    <br>
-                    <select>
-                      <option value="" disabled selected>-- Select Year --</option>
-                      <option value="2015_2016">2015 - 2016</option>
-                      <option value="2016_2017">2016 - 2017</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 medium-centered columns">
-                <div class="row">
-                  <div class="large-4 large-uncentered columns">
-                    <p> Wizara </p>
-                  </div>
-                  <div class="large-6 large-uncentered columns">
-                    <select>
-                      <option value="" disabled selected>-- Select Subject --</option>
-                      <option value="2015_2016">Education</option>
-                      <option value="2016_2017">Health</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 medium-centered columns">
-                <a style="width:50%;" class="button success" href="posts.html">Search</a>
-              </div>
-            </div>
-          </form>
+    </nav>
+
+    <div id="wrapper">
+            <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="Uwazi.html">
+                        <b>UWAZI</b>
+                    <span class="fi-home" alt="Uwazi"></span></a>
+                </li>
+
+                <li>
+                    <a href="discussion.html" alt="Discussion">Discussion<span class="fi-comments" alt="Discussion"></span></a>
+                </li>
+                <li>
+                    <a href="priorities.html">Priorities<span class="fi-clipboard-notes" alt="Priorities"></a>
+                </li>
+                <li>
+                    <a href="#">Budget<span class="fi-dollar" alt="Budget"></a>
+                </li>
+                <li>
+                    <a href="search_budgets.html">Search Budgets<span class="fi-magnifying-glass" alt="SearchBudgets"></a>
+                </li>
+                <li>
+                    <a href="search_rep.html">Search for Representative<span class="fi-torsos" alt="SearchRepresentative"></a>
+                </li>
+                <li>
+                    <a href="#">About<span class="fi-info" alt="About"></a>
+                </li>
+                <li>
+                    <a href="#">Contact<span class="fi-address-book" alt="Contact"></a>
+                </li>
+                <li>
+                    <a href="Uwazi.html">Logout<span class="fi-power" alt="Logout"></a>
+                </li>
+            </ul>
         </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <div class="">
+      
+            <!-- start search budgets -->         
+            <div class="large-12 columns">
+                <div align="center" id="search_budgets">
+                  <h2>Search for budgets</h2>
+                  <form action="" method="post">
+                    <div class="row">
+                      
+                      <div class="medium-4 medium-centered columns">
+                        <div class="row">
+                          <div class="large-4 large-uncentered columns">
+                            <br>
+                            <p> Mwaka </p>
+                          </div>
+                          <div class="large-6 large-uncentered columns">
+                            <br>
+                            <select>
+                              <option value="" disabled selected>-- Select Year --</option>
+                              <option value="2015_2016">2015 - 2016</option>
+                              <option value="2016_2017">2016 - 2017</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="medium-4 medium-centered columns">
+                        <div class="row">
+                          <div class="large-4 large-uncentered columns">
+                            <p> Wizara </p>
+                          </div>
+                          <div class="large-6 large-uncentered columns">
+                            <select>
+                              <option value="" disabled selected>-- Select Subject --</option>
+                              <option value="2015_2016">Education</option>
+                              <option value="2016_2017">Health</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="medium-4 medium-centered columns">
+                        <a style="width:50%;" class="button success" href="posts.html">Tafuta</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+    <!--END SEARCH BUDGET --> 
+    
+  
+  </div>
+        <!-- /#page-content-wrapper -->
       </div>
     </div>
-    <!-- END SEARCH BUDGETS -->
-
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js_sidebar/vendor/jquery.js"></script>
+    <script src="js_sidebar/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js_sidebar/toggle-class.js"></script>
   </body>
 </html>
