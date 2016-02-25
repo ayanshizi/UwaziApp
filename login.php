@@ -31,13 +31,14 @@ if(isset($_POST['submit'])){
 		}
 }
 ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Uwazi | Login</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
   </head>
@@ -51,22 +52,18 @@ if(isset($_POST['submit'])){
     
     <div class="top-bar" id="example-menu">
       <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text"><a href="index.php">Uwazi</a></li>
-          <!-- <li>
-            <a href="#">One</a>
-            <ul class="menu vertical">
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-          </li> -->
-        </ul>
+        <div class="menu-text"><a href="uwazi_home.html">Uwazi</a></div>
       </div>
       <div class="top-bar-right">
-        <ul class="menu">
+        <ul class="dropdown menu" data-dropdown-menu>
           <li><a href="login.html">Login</a></li>
-          <li><a href="signup_citizen.html">Signup</a></li>
+          <li>
+            <a href="#">Signup</a>
+            <ul class="menu vertical">
+              <li><a href="signup_government.html">Serikali</a></li>
+              <li><a href="signup_citizen.html">Raia</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
