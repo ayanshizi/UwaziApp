@@ -10,6 +10,7 @@
   </head>
   <body>
 
+   <!-- START NAVBAR -->
     <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
@@ -17,17 +18,22 @@
     
     <div class="top-bar" id="example-menu">
       <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text"><a href="Uwazi.html">Uwazi</a></li>
-        </ul>
+        <div class="menu-text"><a href="uwazi_home.html">Uwazi</a></div>
       </div>
       <div class="top-bar-right">
-        <ul class="menu">
+        <ul class="dropdown menu" data-dropdown-menu>
           <li><a href="login.html">Login</a></li>
-          <li><a href="signup_citizen.html">Signup</a></li>
+          <li>
+            <a href="#">Signup</a>
+            <ul class="menu vertical">
+              <li><a href="signup_government.html">Serikali</a></li>
+              <li><a href="signup_citizen.html">Raia</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
+    <!-- END NAVBAR -->
 
     <!-- START SIGNUP FORM FOR GOVERNMENT -->
     <div class="row">
@@ -36,12 +42,12 @@
           <div class="row">
             <div class="medium-6 medium-centered columns">
               <div class="expanded button-group">
-                <a class="button secondary" href="signup_citizen.html">Citizen</a>
-                <a class="button success">Government</a>
+                <a class="button secondary" href="signup_citizen.html">Raia</a>
+                <a class="button success">Serikali</a>
               </div>
             </div>
           </div>
-          <h2>Signup For Government</h2>
+          <h2>Signup For Serikali</h2>
           <form action="" method="post">
             <div class="row">
               <div class="medium-6 medium-centered columns"><input type="text" id="name" name="name" placeholder="Full Name"></div>
@@ -58,7 +64,7 @@
             <div class="row">
               <div class="medium-6 medium-centered columns">
                 <select>
-                  <option value="" disabled selected>-- Select Position --</option>
+                  <option value="" disabled selected>-- Chagua Position --</option>
                   <option value="M/kt Serikali Mitaa">M/kt Serikali Mitaa</option>
                   <option value="M/kt Seikali Kata">M/kt Seikali Kata</option>
                   <option value="Diwani">Diwani</option>
@@ -69,9 +75,14 @@
             <div class="row">
               <div class="medium-6 medium-centered columns">
                 <select>
-                  <option value="" disabled selected>-- Select Location --</option>
+                  <option value="" disabled selected>-- Chagua Eneo --</option>
                   <option value="Kigamboni">Kigamboni</option>
                   <option value="Kijitonyama">Kijitonyama</option>
+                  <option value="Kijitonyama">Ilala</option>
+                  <option value="Kijitonyama">Kinodoni</option>
+                  <option value="Kijitonyama">Kawe</option>
+                  <option value="Kijitonyama">Mbagala</option>
+                  <option value="Kijitonyama">Temeke</option>
                 </select>
               </div>
             </div>
